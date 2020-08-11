@@ -7,3 +7,5 @@ class Config(object):
     'sqlite:///' + os.path.join(basedir, 'app.db')
 
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'you-will-never-guess'
+
+    POSTS_PER_PAGE = 25
